@@ -48,3 +48,4 @@ for u=1:600
 I(u,801)=0;
 endfor
 imshow(I)
+imwrite(I,'output.bmp');
