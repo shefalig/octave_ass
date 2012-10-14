@@ -15,22 +15,19 @@ while(a<=750)
 	b++;
 	endwhile
 	if(b>i)
-		for c=i+21:b+31;
-			for d=j+1:j+11;
-			I(c,d)=0;
-			d++;
-			endfor
-			c++;
-		endfor
+	p=i+21;
+	q=b+31;
 	else
-		for c=b+21:i+31;
-			for d=j+1:j+11;
+	p=b+21;
+	q=i+31;
+	endif
+	for c=p:q;
+		for d=j+1:j+11;
 			I(c,d)=0;
 			d++;
-			endfor
-			c++;
 		endfor
-	endif
+		c++;
+	endfor
 	if(a==750)
 	p=800;
 	else
@@ -49,5 +46,5 @@ while(a<=750)
 endwhile
 for u=1:600
 I(u,801)=0;
-endfor  
+endfor
 imshow(I)
